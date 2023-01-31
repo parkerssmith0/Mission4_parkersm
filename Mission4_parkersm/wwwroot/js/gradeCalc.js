@@ -1,5 +1,6 @@
 ﻿
-
+//If the user clicks on the submit button, all the attributes will come here and will determine
+//what letter grade the user will get.
 $("#submit").click(function () {
     var total
     total = ($("#assignments").val() * .5) + ($("#groupProject").val() * .1) + ($("#quizzes").val() * .1) +
@@ -20,7 +21,7 @@ $("#submit").click(function () {
     else {grade = "E"}
 
 
-
+    //This is the letter grade being sent back to the HTML file and displayed in the p tag with the id "gradeOutput"
     $("#gradeOutput").html("Your overall grade is: " + grade);
 })
 
