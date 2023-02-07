@@ -22,7 +22,9 @@ $("#submit").click(function () {
 
 
     //This is the letter grade being sent back to the HTML file and displayed in the p tag with the id "gradeOutput"
-    $("#gradeOutput").html("Your overall grade is: " + grade);
+    //$("#gradeOutput").html("Your overall grade is: " + grade);
+
+    alert("Your overall grade is: " + grade)
 })
 
     //Assignments 50 %

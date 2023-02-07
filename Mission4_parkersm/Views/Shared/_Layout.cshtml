@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!--This is where I link the css and bootstrap and also add an image to my title-->
+    <link href="@Url.Content("~/css/designs.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/lib/bootstrap/css/bootstrap.min.css")" rel="stylesheet" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" type="image/x-icon" href="@Url.Content("~/img/Icon_Bird_512x512.png")">
+</head>
+<body>
+    <nav>
+        <a asp-controller="Chilling" asp-action="Index">Home</a>
+        <a asp-controller="Chilling" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>This is the footer</footer>
+    <script src="@Url.Content("~/lib/jquery/jquery-3.6.3.min.js")"></script>
+</body>
+</html>
